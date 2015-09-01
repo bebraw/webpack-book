@@ -157,7 +157,7 @@ export default class Notes extends React.Component {
 
 It is a good idea to attach some CSS classes to components to make it easier to style them. React provides other styling approaches beyond this. I've discussed them later in this book. There's no single right way to style and you'll have to adapt based on your preferences. In this case, we'll just focus on keeping it simple.
 
-We also need to replace the old `App` logic to use our new component. You should remove the old rendering logic, import `Note` and update `render()` to use it. Remember to pass `notes` through `items` prop and you might see something familiar. I have included the full solution below for completeness.
+We also need to replace the old `App` logic to use our new component. You should remove the old rendering logic, import `Notes` and update `render()` to use it. Remember to pass `notes` through `items` prop and you might see something familiar. I have included the full solution below for completeness.
 
 **app/components/App.jsx**
 
@@ -648,11 +648,8 @@ A good next step would be to constrain `Notes` container a little and get rid of
 
 .notes {
   max-width: 10em;
-
   margin: 0.5em;
-
   padding-left: 0;
-
   list-style: none;
 }
 ```
@@ -666,16 +663,13 @@ To make individual `Notes` stand out we can apply a couple of rules.
 
 .note {
   margin-bottom: 0.5em;
-
   padding: 0.5em;
-
   background-color: #fdfdfd;
-
   box-shadow: 0 0 0.3em .03em rgba(0,0,0,.3);
 }
+
 .note:hover {
   box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
-
   transition: .6s;
 }
 ```
@@ -692,17 +686,13 @@ Finally, we should make those delete buttons stand out less. One way to achieve 
 .note:hover .delete {
   visibility: visible;
 }
+
 .note .delete {
   float: right;
-
   padding: 0;
-
   background-color: #fdfdfd;
   border: none;
-
   cursor: pointer;
-  cursor: hand;
-
   visibility: hidden;
 }
 ```

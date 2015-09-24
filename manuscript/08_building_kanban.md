@@ -192,7 +192,7 @@ var ROOT_PATH = path.resolve(__dirname);
 if(TARGET === 'build') {
   module.exports = merge(common, {
     entry: {
-      app: path.resolve(ROOT_PATH, 'app'),
+      app: path.resolve(ROOT_PATH, 'app/main.jsx'),
       vendor: Object.keys(pkg.dependencies)
     },
     devtool: 'source-map',
@@ -228,7 +228,7 @@ We can use the placeholder idea within our configuration like this:
 if(TARGET === 'build') {
   module.exports = merge(common, {
     entry: {
-      app: path.resolve(ROOT_PATH, 'app'),
+      app: path.resolve(ROOT_PATH, 'app/main.jsx'),
       vendor: Object.keys(pkg.dependencies)
     },
     /* important! */

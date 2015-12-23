@@ -184,9 +184,11 @@ Now that we got that out of the way, we can start to develop our Kanban applicat
 import React from 'react';
 import Note from './Note.jsx';
 
-export default () => {
-  return <Note />;
-};
+export default class App extends React.Component {
+  render() {
+    return <Note />;
+  }
+}
 ```
 
 T> You can import portions from `react` using the syntax `import React, {Component} from 'react';`. Then you can do `class App extends Component`. It is important that you import `React` as well because that JSX will get converted to `React.createElement` calls. You may find this alternative a little neater regardless.

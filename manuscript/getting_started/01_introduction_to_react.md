@@ -6,7 +6,7 @@ In this chapter we'll go through some of the basic ideas behind the library so y
 
 ## What is React?
 
-![React](images/react_header.png)
+![React](../images/react_header.png)
 
 React is a JavaScript library that forces you to think in terms of components. This model of thinking fits user interfaces well. Depending on your background it might feel alien at first. You will have to think very carefully about the concept of `state` and where it belongs.
 
@@ -16,7 +16,7 @@ React is pragmatic in the sense that it contains a set of escape hatches. If the
 
 ## Virtual DOM
 
-![Virtual DOM](images/vdom.png)
+![Virtual DOM](../images/vdom.png)
 
 One of the fundamental problems of programming is how to deal with state. Suppose you are developing a user interface and want to show the same data in multiple places. How do you make sure the data is consistent?
 

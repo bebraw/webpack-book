@@ -184,8 +184,7 @@ leanpub-end-insert
       autoFocus={true}
       defaultValue={value}
       onBlur={this.finishEdit}
-      onKeyPress={this.checkEnter}
-      {...props} />;
+      onKeyPress={this.checkEnter} />;
   }
   ...
 }

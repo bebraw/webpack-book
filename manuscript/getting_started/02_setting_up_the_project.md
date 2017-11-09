@@ -56,7 +56,7 @@ After this process you have a fresh project to work against.
 To get the project running, execute `npm start`. You should see something like this at the terminal if everything went right:
 
 ```bash
-> webpack-dev-server
+> ./node_modules/.bin/webpack-dev-server
 
 http://localhost:8080/
 webpack result is served from /
